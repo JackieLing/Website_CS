@@ -1,0 +1,1041 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>系部简介</title>
+    <meta name="Keywords" content="公司概况" />
+    <meta name="Description" content="公司概况" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/index.css" rel="stylesheet" type="text/css" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <link href="style/slick.css" rel="stylesheet">
+    <link href="style/index_20200513.css" rel="stylesheet" type="text/css">
+    <link href="style/news_index_416.css" rel="stylesheet" type="text/css">
+    <script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script/js.js"></script>
+    <script language="javascript" type="text/javascript" src="script/fun.js"></script>
+    <script language="javascript" type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script/js.js"></script>
+    <script language="javascript" type="text/javascript" src="script/fun.js"></script>
+    <!--[if lte IE 6]>
+<script src="script/png.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]-->
+
+    <style type="text/css">
+        * {
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+        .news {
+
+            width: 300px;
+
+            border: 1px solid gray;
+
+            padding: 20px 15px;
+
+            margin: 10px;
+
+            background: url(img/bg.gif);
+
+        }
+
+        .news h2 {
+
+            padding-bottom: 5px;
+
+            color: white;
+
+            font-weight: bold;
+
+        }
+
+        .news ul {
+
+            padding: 5px 10px;
+
+            background: white;
+
+        }
+
+        .news ul li {
+
+            list-style: none;
+
+            height: 30px;
+
+            line-height: 30px;
+
+            border-bottom: 1px dashed gray;
+
+            text-indent: 15px;
+
+            font-size: 14px;
+
+            background: url(img/tb.gif) no-repeat center left;
+
+        }
+
+        .news a {
+
+            text-decoration: none;
+
+            color: #06C;
+
+        }
+
+        .news a:hover {
+
+            text-decoration: underline;
+
+            color: red;
+
+        }
+
+        .news1 {
+
+            width: 300px;
+
+            border: 1px solid gray;
+
+            padding: 20px 15px;
+
+            margin: 10px;
+
+            background: url(img/bg.gif);
+
+        }
+
+        .news1 h2 {
+
+            padding-bottom: 5px;
+
+            color: white;
+
+            font-weight: bold;
+
+        }
+
+        .news1 ul {
+
+            padding: 5px 10px;
+
+            background: white;
+
+        }
+
+        .news1 ul li {
+
+            list-style: none;
+
+            height: 30px;
+
+            line-height: 30px;
+
+            border-bottom: 1px dashed gray;
+
+            text-indent: 15px;
+
+            font-size: 14px;
+
+            background: url(img/tb.gif) no-repeat center left;
+
+        }
+
+        .news1 a {
+
+            text-decoration: none;
+
+            color: #06C;
+
+        }
+
+        .news1 a:hover {
+
+            text-decoration: underline;
+
+            color: red;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 10;
+            list-style: none;
+            border: 0;
+        }
+
+        .all {
+            width: 500px;
+            height: 200px;
+            padding: 7px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .screen {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen li {
+            width: 500px;
+            height: 200px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 3000px;
+        }
+
+        .all ol {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .all ol li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .all ol li.current {
+            background: yellow;
+        }
+
+        #arr {
+            display: none;
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+
+        .news1 a {
+
+            text-decoration: none;
+
+            color: #06C;
+
+        }
+
+        .news1 a:hover {
+
+            text-decoration: underline;
+
+            color: red;
+
+        }
+
+        .news {
+            margin-top: -27.6%;
+            margin-left: 65%;
+            float: left;
+        }
+
+        .news1 {
+            margin-left: 28%;
+        }
+
+        .news1 a {
+
+            text-decoration: none;
+
+            color: #06C;
+
+        }
+
+        .news1 a:hover {
+
+            text-decoration: underline;
+
+            color: red;
+
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            background: black;
+        }
+
+        #content #post,
+        #comment p {
+            zoom: 1;
+        }
+
+        #content #post:after,
+        #comment p:after {
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            overflow: hidden;
+            content: '.';
+        }
+
+        .transition {
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            -ms-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+        }
+
+        #content {
+            margin: 0 auto;
+            width: 960px;
+            overflow: hidden;
+        }
+
+        #content #post {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px #d4d4d4 dashed;
+            height: 556px;
+        }
+
+        #content #post textarea {
+            display: block;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 948px;
+            height: 390px;
+            border: 1px #d1d1d1 solid;
+            border-radius: 5px;
+            resize: none;
+            outline: none;
+        }
+
+        #content #post textarea:hover {
+            border: 1px #9bdf70 solid;
+            background: #f0fbeb;
+        }
+
+        #content #post #postBt,
+        #content #post #clearBt {
+            margin-left: 5px;
+            padding: 3px;
+            float: right;
+        }
+
+        #comment {
+            overflow: hidden;
+        }
+
+        #comment p {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #comment p:nth-child(odd) {
+            border: 1px solid #e3e197;
+            background: #ffd;
+        }
+
+        #comment p:nth-child(even) {
+            border: 1px solid #adcd3c;
+            background: #f2fddb;
+        }
+
+        /*#comment p span{display:inline; float:left;}*/
+        #comment p .right {
+            text-align: right;
+        }
+
+        #comment p .msg {
+            width: 738px;
+        }
+
+        #comment p .datetime {
+            width: 200px;
+            color: #999;
+            text-align: right;
+        }
+
+        .liuyan {
+            width: 50%;
+            height: 30%;
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <div class="div-a">
+        <div class="headDiv">
+            <div class="w968">
+                <img src="image/logo.png" width="400" height="110" alt="" />
+                <div class="topSearch">
+                    <form name="formsearch" action="./?search" method="post">
+                        <input type="text" name="key" class="input1" />
+                        <input type="submit" class="btn1" value="" />
+                    </form>
+                </div>
+                <div class="topLanguage">
+                    <a href="/?en.html">ENGLISH</a><br /><a href="/">中　　文</a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html" class="sN">首页</a></li>
+                        <li><a href="introduce.html" class="sNavA">系部概况</a></li>
+                        <li><a href="fanyibu.html" class="sNavA">通知公告</a></li>
+                        <li><a href="fanyianli.html" class="sNavA">系内动态</a></li>
+                        <li><a href="jinqixiangmu.html" class="sNavA">党团建设</a></li>
+                        <li><a href="rencaizhaoping.html">教学研究</a></li>
+                        <li><a href="lianxiwomen.html">专业设置</a></li>
+                        <li><a href="xinxifankui.html">中日课程合作</a></li>
+                        <li><a href="xinxifankui.html">教师风采</a></li>
+                        <li><a href="xinxifankui.html">学生工作</a></li>
+                        <li><a href="xinxifankui.html">精品课程</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sNav">
+            <ul>
+                <li><a href="gaikuang.html">系部简介</a></li>
+                <li><a href="lingdaotuanti.html">内设机构</a></li>
+                <li><a href="gongsijigou.html">系内事迹</a></li>
+                <li><a href="gongsishiji.html">公司事迹</a></li>
+            </ul>
+        </div>
+
+        <div class="sNav">
+            <ul>
+                <li><a href="fanyibu.html">校内通知</a></li>
+                <li><a href="gongguanbu.html">系内通知</a></li>
+
+            </ul>
+        </div>
+
+        <div class="sNav">
+            <ul>
+                <li><a href="shangxi.html">赏析</a></li>
+                <li><a href="cuowufenxi.html">错误分析</a></li>
+            </ul>
+        </div>
+
+        <div class="sNav">
+            <ul>
+                <li><a href="jinqixiangmu.html">近期项目</a></li>
+                <li><a href="hezuowangzhan.html">合作网站</a></li>
+                <li><a href="jingqumenpiao.html">景区门票</a></li>
+            </ul>
+        </div>
+
+        <div class="sNav">
+            <ul>
+                <li><a href="/?photo/tp/251.html">#</a></li>
+                <li><a href="/?audio/tp/252.html">#</a></li>
+            </ul>
+        </div>
+
+        <div class="sNav">
+            <ul>
+                <li><a href="/?djyd/tp/253.html">#</a></li>
+                <li><a href="/?djyd/tp/254.html">#</a></li>
+                <li><a href="/?djyd/tp/255.html" title="#">#</a></li>
+                <li><a href="/?djyd/tp/256.html" title="#">#</a></li>
+                <li><a href="/?down/tp/257.html">下载专区</a></li>
+            </ul>
+        </div>
+
+        <div class="sNav">
+            <ul>
+                <li><a href="/?contact/tp/258.html">#</a></li>
+                <li><a href="/?map1/tp/259.html">#</a></li>
+                <li><a href="/?map2/tp/260.html">#</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="wal">
+            <div class="pageBg1">
+                <div class="w970">
+                    <!--w970-->
+
+                    
+
+                    <div class="notice">
+                        <div>
+                            <img src="image/xueshenggongzuo.png" />
+                        </div>
+                        <div class="ext3">系内消息通知</div>
+                        <div class="ext">
+                            <a style="color:#000" <href="/jkx/class.aspx?id=120&cid=6"></a>
+                        </div>
+                        <div>
+                            <img src="images/vline.png" width="218" height="1" />
+                        </div>
+                        <div class="ext2">
+                            <ul>
+
+
+                                <li><a href="/jkx/content.aspx?ChannelId=6&id=7411"
+                                        title=" 我院全国计算机等级考试成绩大幅提高，4个班级100%通过" style="color:">
+                                        我院全国计算机等级考试成绩大幅提</a>&nbsp;<span>05-30</span></li>
+
+                                <li><a href="/jkx/content.aspx?ChannelId=6&id=7376" title="计算机系2019届毕业设计（论文）答辩顺利完成"
+                                        style="color:">计算机系2019届毕业设计（论文）答</a>&nbsp;<span>05-21</span></li>
+
+                                <li><a href="/jkx/content.aspx?ChannelId=6&id=6741"
+                                        title="我系教师参加“第二届教育部在线教育研究中心智慧教学研讨会暨2018雨课堂峰会” "
+                                        style="color:">我系教师参加“第二届教育部在线教</a>&nbsp;<span>09-15</span></li>
+
+
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="images/vline.png" width="218" height="1" />
+                        </div>
+                        <div>
+                            <img src="images/flower.png" width="218" height="200" />
+                        </div>
+                    </div>
+
+
+
+                    
+
+
+                    <div class="news1">
+
+                        <h2>新闻列表/News List</h2>
+
+                        <ul>
+
+                            <li><a href="#">2020年实现所有人民脱贫</a></li>
+
+                            <li><a href="#">中国高考生人数逐年递减说明了什么</a></li>
+
+                            <li><a href="#">IT专业就业率第一</a></li>
+
+                            <li><a href="#">前程工作师前景如何</a></li>
+
+                            <li><a href="#">科技改变生活，10个新科技展示</a></li>
+
+                            <li><a href="#">学会管理时间</a></li>
+
+                        </ul>
+
+
+                    </div>
+                    <div class="news">
+
+                        <h2>新闻列表/News List</h2>
+
+                        <ul>
+
+                            <li><a href="#">2020年实现所有人民脱贫</a></li>
+
+                            <li><a href="#">中国高考生人数逐年递减说明了什么</a></li>
+
+                            <li><a href="#">IT专业就业率第一</a></li>
+
+                            <li><a href="#">前程工作师前景如何</a></li>
+
+                            <li><a href="#">科技改变生活，10个新科技展示</a></li>
+
+                            <li><a href="#">学会管理时间</a></li>
+
+                        </ul>
+
+
+                    </div>
+
+
+
+                    <!--<div class="pageBanner"><img src="image/shouyetp.png" width="950" height="210" alt="" /></div>-->
+
+
+
+                    <div class="fl w219">
+
+                        <div class="sideTitle"><img src="image/kaitou1.png" alt="" /></div>
+                        <div class="sideNav">
+                            <div class="bg1">
+                                <div class="bg2">
+                                    <ul>
+
+                                        <div class="notice">
+                                            <div>
+                                                <a href="/jkx/class.aspx?id=117&cid=6"><img src="image/notice_text.png"
+                                                        width="174" height="32" /></a>
+                                            </div>
+                                            <div id="_userlogin">
+
+                                                <marquee direction="up" scrollamount="1" height="128" width="200">
+
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7412"
+                                                            title="关于2019年端午节放假教学安排的通知"
+                                                            style="color:">关于2019年端午节放假教学安排的通</a>&nbsp;<span>05-30</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7283"
+                                                            title="关于组织收看 《春天的课堂—第八届首都十大教育新闻人物公开课》的通知 "
+                                                            style="color:">关于组织收看 《春天的课堂—第八届</a>&nbsp;<span>04-12</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7282"
+                                                            title="关于2019年“五•一”劳动节放假教学安排的通知"
+                                                            style="color:">关于2019年“五•一”劳动节放假教</a>&nbsp;<span>04-12</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7281"
+                                                            title="关于世园会压力测试期间教学活动安排的通知 "
+                                                            style="color:">关于世园会压力测试期间教学活动安</a>&nbsp;<span>04-12</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=6790"
+                                                            title="“中秋节”、“国庆节”假期安全提示 "
+                                                            style="color:">“中秋节”、“国庆节”假期安全提</a>&nbsp;<span>09-21</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=6789"
+                                                            title="关于2018年中秋节、国庆节放假教学安排的通知"
+                                                            style="color:">关于2018年中秋节、国庆节放假教学</a>&nbsp;<span>09-21</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=6625"
+                                                            title="关于2018-2019学年第一学期开学初补考安排的通知"
+                                                            style="color:">关于2018-2019学年第一学期开学初补</a>&nbsp;<span>07-13</span>
+                                                    </li>
+
+                                                    <li><a href="/jkx/news/article-6-4644.aspx" title="图书馆关于启用门禁系统的通知"
+                                                            style="color:">图书馆关于启用门禁系统的通知</a>&nbsp;<span>05-04</span>
+                                                    </li>
+
+
+                                                </marquee>
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="sideFast">
+                            <ul>
+                                <li><a href="http://lab.ccbupt.cn" target="_blank">04-12信息1</a></li>
+                                <li><a href="http://lib.ccbupt.cn" target="_blank">04-12信息1</a></li>
+                                <li><a href="./?contact/tp/258.html" target="_blank">04-12信息1</a></li>
+                                <li><a href="http://mail.ccbupt.cn" target="_blank">04-12信息1</a></li>
+                                <li><a href="mailto:president@ccbupt.cn" target="_blank">04-12信息1</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="fr w705">
+                        <div class="pageNow">
+                            <a href="/"></a><a href="WEB_APP}?about.html">系部简介</a><span></span>
+                        </div>
+                        <!--内容区域-->
+                        <br>
+
+
+
+                        <div class="notice">
+                            <div>
+                                <img src="image/xueshenggongzuo.png" />
+                            </div>
+                            <div class="ext3">系内消息通知</div>
+                            <div class="ext">
+                                <a style="color:#000" <href="/jkx/class.aspx?id=120&cid=6"></a>
+                            </div>
+                            <div>
+                                <img src="images/vline.png" width="218" height="1" />
+                            </div>
+                            <div class="ext2">
+                                <ul>
+
+
+                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7411"
+                                            title=" 我院全国计算机等级考试成绩大幅提高，4个班级100%通过" style="color:">
+                                            我院全国计算机等级考试成绩大幅提</a>&nbsp;<span>05-30</span></li>
+
+                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7376" title="计算机系2019届毕业设计（论文）答辩顺利完成"
+                                            style="color:">计算机系2019届毕业设计（论文）答</a>&nbsp;<span>05-21</span></li>
+
+                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=6741"
+                                            title="我系教师参加“第二届教育部在线教育研究中心智慧教学研讨会暨2018雨课堂峰会” "
+                                            style="color:">我系教师参加“第二届教育部在线教</a>&nbsp;<span>09-15</span></li>
+
+
+                                </ul>
+                            </div>
+                        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <img src="images/fs.png" width="400" height="200" />
+                        </div>
+
+                        <div class="notice">
+                            <div>
+                                <img src="image/xueshenggongzuo.png" />
+                            </div>
+                            <div class="ext3">系内消息通知</div>
+                            <div class="ext">
+                                <a style="color:#000" <href="/jkx/class.aspx?id=120&cid=6"></a>
+                            </div>
+                            <div>
+                                <img src="images/vline.png" width="218" height="1" />
+                            </div>
+                            <div class="ext2">
+                                <ul>
+
+
+                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7411"
+                                            title=" 我院全国计算机等级考试成绩大幅提高，4个班级100%通过" style="color:">
+                                            我院全国计算机等级考试成绩大幅提</a>&nbsp;<span>05-30</span></li>
+
+                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=7376" title="计算机系2019届毕业设计（论文）答辩顺利完成"
+                                            style="color:">计算机系2019届毕业设计（论文）答</a>&nbsp;<span>05-21</span></li>
+
+                                    <li><a href="/jkx/content.aspx?ChannelId=6&id=6741"
+                                            title="我系教师参加“第二届教育部在线教育研究中心智慧教学研讨会暨2018雨课堂峰会” "
+                                            style="color:">我系教师参加“第二届教育部在线教</a>&nbsp;<span>09-15</span></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/book.png" width="400" height="200" />
+                        </div>
+
+                        <div class="liuyan">
+                            <iframe src="liuyan.html" frameborder="0" width="700px" height="700px"></iframe>
+                            <!--  <iframe marginheight=0 marginwidth=0 frameborder=0 width=100% style="overflow-x:hidden;" height=650 scrolling=no src="liuyan.html" name=showmain id=showmain οnlοad="resize();">不能正常显示</iframe>
+  -->
+                        </div>
+
+
+
+
+
+
+                        <!--内容区域End-->
+                    </div>
+                    <span class="clear_f"></span>
+                    <!--w970End-->
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+
+
+            var named;
+            function delete1(id) {
+                localStorage.removeItem(id);
+                this.Storage.writeData();
+            }
+            function prom() {
+
+                var name = prompt("请输入您的名字", "");//将输入的内容赋给变量 name ，
+                named = name;
+                //这里需要注意的是，prompt有两个参数，前面是提示的话，后面是当对话框出来后，在对话框里的默认值
+
+                if (named)//如果返回的有内容
+
+                {
+
+                    alert("欢迎您：" + name)
+                    document.getElementById("shangtian").style.display = "none";
+                    document.getElementById("ritian").value = named;
+
+                }
+                else {
+                    document.getElementById("ritian").value = "匿名发言者";
+                }
+
+            }
+            var Storage =
+            {
+                saveData: function ()//保存数据
+                {
+
+                    var data = document.querySelector("#post textarea");
+                    if (data.value != "") {
+                        var time = new Date().getTime() + Math.random() * 5;//getTime是Date对象中的方法，作用是返回 1970年01月01日至今的毫秒数
+                        if (named) {
+                            localStorage.setItem(time, data.value + "|" + named + "|" + this.getDateTime());//将毫秒数存入Key值中，可以降低Key值重复率
+                        }
+                        else {
+                            localStorage.setItem(time, data.value + "|" + "匿名发言者" + "|" + this.getDateTime());//将毫秒数存入Key值中，可以降低Key值重复率
+                        }
+
+                        data.value = "";
+                        this.writeData();
+                    }
+                    else {
+                        alert("请填写您的留言！");
+                    }
+                },
+                writeData: function ()//输出数据
+                {
+                    var dataHtml = "", data = "";
+                    for (var i = localStorage.length - 1; i >= 0; i--)//效率更高的循环方法
+                    {
+                        data = localStorage.getItem(localStorage.key(i)).split("|");
+
+                        //dataHtml += "<p><span class=\"msg\">" + data[0] + "</span><span class=\"datetime\">" + data[1] + "</span><span>" + data[2]+"</span></p>";
+                        dataHtml += "<span style=>" + data[1] + "<span style=\"float:right\">" + data[2] + "</span><p><span class=\"msg\">" + data[0] + "<input style=\"float:right;border:none;border-radius:5px;\" id=\"clearBt\" type=\"button\" onclick=\"delete1(" + localStorage.key(i) + ");\" value=\"删除\"/>" + "</span></p>";
+                    }
+                    document.getElementById("comment").innerHTML = dataHtml;
+                },
+                clearData: function ()//清空数据
+                {
+                    if (localStorage.length > 0) {
+                        if (window.confirm("清空后不可恢复，是否确认清空？")) {
+                            localStorage.clear();
+                            this.writeData();
+                        }
+                    }
+                    else {
+                        alert("没有需要清空的数据！");
+                    }
+                },
+                getDateTime: function ()//获取日期时间，例如 2012-03-08 12:58:58
+                {
+                    var isZero = function (num)//私有方法，自动补零
+                    {
+                        if (num < 10) {
+                            num = "0" + num;
+                        }
+                        return num;
+                    }
+
+                    var d = new Date();
+                    return d.getFullYear() + "-" + isZero(d.getMonth() + 1) + "-" + isZero(d.getDate()) + " " + isZero(d.getHours()) + ":" + isZero(d.getMinutes()) + ":" + isZero(d.getSeconds());
+                }
+            }
+
+            window.onload = function () {
+                Storage.writeData();//当打开页面的时候，先将localStorage中的数据输出一边，如果没有数据，则输出空
+                document.getElementById("postBt").onclick = function () { Storage.saveData(); }//发表评论按钮添加点击事件，作用是将localStorage中的数据输出
+                document.getElementById("clearBt").onclick = function () { Storage.clearData(); }//清空所有已保存的数据
+            }
+
+
+
+
+            $(document).ready(function () {
+
+                $(".suspend").mouseover(function () {
+                    $(this).stop();
+                    $(this).animate({ width: 160 }, 400);
+                })
+
+                $(".suspend").mouseout(function () {
+                    $(this).stop();
+                    $(this).animate({ width: 40 }, 400);
+                });
+
+            });
+
+            window.onload = function () {
+
+
+                var all = document.getElementById("all");
+                var screen = all.firstElementChild || all.firstChild;
+                var imgWidth = screen.offsetWidth;
+                var ul = screen.firstElementChild || screen.firstChild;
+                var ol = screen.children[1];
+                var div = screen.lastElementChild || screen.lastChild;
+                var spanArr = div.children;
+
+                //2.复制第一张图片所在的li,添加到ul的最后面。
+                var ulNewLi = ul.children[0].cloneNode(true);
+                ul.appendChild(ulNewLi);
+                //3.给ol中添加li，ul中的个数-1个，并点亮第一个按钮。
+                for (var i = 0; i < ul.children.length - 1; i++) {
+                    var olNewLi = document.createElement("li");
+                    olNewLi.innerHTML = i + 1;
+                    ol.appendChild(olNewLi)
+                }
+                var olLiArr = ol.children;
+                olLiArr[0].className = "current";
+
+                //4.鼠标放到ol的li上切换图片
+                for (var i = 0; i < olLiArr.length; i++) {
+                    //自定义属性，把索引值绑定到元素的index属性上
+                    olLiArr[i].index = i;
+                    olLiArr[i].onmouseover = function () {
+                        //排他思想
+                        for (var j = 0; j < olLiArr.length; j++) {
+                            olLiArr[j].className = "";
+                        }
+                        this.className = "current";
+                        //鼠标放到小的方块上的时候索引值和key以及square同步
+                        //                    key = this.index;
+                        //                    square = this.index;
+                        key = square = this.index;
+                        //移动盒子
+                        animate(ul, -this.index * imgWidth);
+                    }
+                }
+
+                //5.添加定时器
+                var timer = setInterval(autoPlay, 1000);
+
+                //固定向右切换图片
+                //两个定时器（一个记录图片，一个记录小方块）
+                var key = 0;
+                var square = 0;
+
+                function autoPlay() {
+                    //通过控制key的自增来模拟图片的索引值，然后移动ul
+                    key++;
+                    if (key > olLiArr.length) {
+                        //图片已经滑动到最后一张，接下来，跳转到第一张，然后在滑动到第二张
+                        ul.style.left = 0;
+                        key = 1;
+                    }
+                    animate(ul, -key * imgWidth);
+                    //通过控制square的自增来模拟小方块的索引值，然后点亮盒子
+                    //排他思想做小方块
+                    square++;
+                    if (square > olLiArr.length - 1) {//索引值不能大于等于5，如果等于5，立刻变为0；
+                        square = 0;
+                    }
+                    for (var i = 0; i < olLiArr.length; i++) {
+                        olLiArr[i].className = "";
+                    }
+                    olLiArr[square].className = "current";
+                }
+
+                //鼠标放上去清除定时器，移开后在开启定时器
+                all.onmouseover = function () {
+                    div.style.display = "block";
+                    clearInterval(timer);
+                }
+                all.onmouseout = function () {
+                    div.style.display = "none";
+                    timer = setInterval(autoPlay, 1000);
+                }
+
+                //6.左右切换图片（鼠标放上去显示，移开隐藏）
+                spanArr[0].onclick = function () {
+                    //通过控制key的自增来模拟图片的索引值，然后移动ul
+                    key--;
+                    if (key < 0) {
+                        //先移动到最后一张，然后key的值取之前一张的索引值，然后在向前移动
+                        ul.style.left = -imgWidth * (olLiArr.length) + "px";
+                        key = olLiArr.length - 1;
+                    }
+                    animate(ul, -key * imgWidth);
+                    //通过控制square的自增来模拟小方块的索引值，然后点亮盒子
+                    //排他思想做小方块
+                    square--;
+                    if (square < 0) {//索引值不能大于等于5，如果等于5，立刻变为0；
+                        square = olLiArr.length - 1;
+                    }
+                    for (var i = 0; i < olLiArr.length; i++) {
+                        olLiArr[i].className = "";
+                    }
+                    olLiArr[square].className = "current";
+                }
+                spanArr[1].onclick = function () {
+                    //右侧的和定时器一模一样
+                    autoPlay();
+                }
+
+
+                function animate(ele, target) {
+                    clearInterval(ele.timer);
+                    var speed = target > ele.offsetLeft ? 10 : -10;
+                    ele.timer = setInterval(function () {
+                        var val = target - ele.offsetLeft;
+                        ele.style.left = ele.offsetLeft + speed + "px";
+
+                        if (Math.abs(val) < Math.abs(speed)) {
+                            ele.style.left = target + "px";
+                            clearInterval(ele.timer);
+                        }
+                    }, 10)
+                }
+            }
+
+        </script>
+
+
+
+
+        <div class="footDiv">
+            <img src="image/ccbuptwx.jpg"><br />
+            版权所有：令狐<br />
+            地址：#　　邮政编码：123　　京ICP备10026379号　　京公网安备1101150004号
+        </div>
+</body>
+
+</html>
